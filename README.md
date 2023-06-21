@@ -4,7 +4,7 @@ Some of the activies carried out where:
 - Create a spider for web scrapping.
 - Preprocess the data extracted.
 - Statistical Analysis.
-  Machine Learning models:
+Machine Learning models:
 - Unsupervised: Clustering.
 - Supervised: Linear Regression, Convolutional Neural Network (CNN).
 - Comparative evaluation of results.
