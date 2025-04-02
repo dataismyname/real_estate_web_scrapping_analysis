@@ -62,6 +62,44 @@ To explore the logic, analysis, and models used, the main Jupyter Notebook can b
 
 ---
 
+## 🖼️ Sample Visualizations
+
+Below are a few examples of the visual outputs generated during the project:
+
+### 📊 Feature Distribution and Property Types  
+![Feature Boxplot](images/box_graph_house_properties.JPG)  
+This boxplot shows the distribution of key numerical and categorical features used in the modeling process. All variables were normalized for better comparison. It includes:
+
+- `price`, `location`, `bathrooms`, `bedrooms`, `m2`: main continuous variables.
+- `prop_NOTA`, `prop_apartment`, `prop_house`: property type indicators (one-hot encoded).
+
+This visualization helped identify outliers and understand the spread and scale of the features.
+
+---
+
+### 🧭 Location vs. Price Colored by Bedrooms  
+![Location vs Price Scatter](images/scatter_location_price_bedrooms.JPG)  
+This scatter plot displays the relationship between property **location** (normalized) and **price**, with color intensity representing the number of **bedrooms**. 
+
+- Each point corresponds to a property.
+- Darker shades indicate more bedrooms, while lighter ones indicate fewer.
+- This visualization helps explore whether certain locations are associated with higher prices or larger properties.
+
+It’s useful to detect clusters, pricing anomalies by location, and the possible influence of bedroom count on pricing across different zones.
+
+---
+
+### 📈 Price Prediction: Real vs. Predicted Comparison  
+![Model Prediction Comparison](images/prediction_comparison.JPG)  
+This line plot compares actual property prices with predictions from two models:
+
+- **RL Price Pred**: Linear Regression.
+- **RN Price Pred**: Neural Network.
+
+Both models follow the real trend closely, but the neural network shows a better response to extreme price variations, indicating a more flexible fit.
+
+---
+
 ## 📊 Summary
 
 This project explores pricing trends and market behavior in the real estate sector. Data was obtained through web scraping campaigns and processed into structured datasets for analysis. Market segments were identified using clustering algorithms, and property price predictions were modeled using regression techniques and neural networks.
